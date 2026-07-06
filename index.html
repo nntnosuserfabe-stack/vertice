@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vértice — Infraestrutura em T.I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#070B14; --text:#E6EDF7; --muted:#8B98B0; --accent:#4F9CF9; --glow:#22D3EE; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    min-height:100vh;background:var(--bg);color:var(--text);
+    font-family:"Space Grotesk",sans-serif;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    background-image:radial-gradient(circle at 50% 30%, rgba(34,211,238,.08), transparent 60%);
+  }
+  .mark{
+    font-size:clamp(2.5rem,9vw,5rem);font-weight:700;letter-spacing:.15em;
+    background:linear-gradient(90deg,var(--accent),var(--glow));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .sub{margin-top:.75rem;color:var(--muted);font-weight:500;letter-spacing:.05em}
+  .tag{margin-top:2rem;font-family:"JetBrains Mono",monospace;font-size:.8rem;color:var(--accent);opacity:.85}
+  .dot{
+    display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--glow);
+    margin-right:.5rem;box-shadow:0 0 12px var(--glow);animation:pulse 1.8s ease-in-out infinite
+  }
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+</style>
+</head>
+<body>
+  <div>
+    <div class="mark">VÉRTICE</div>
+    <div class="sub">Infraestrutura em T.I</div>
+    <div class="tag"><span class="dot"></span>site em construção</div>
+  </div>
+</body>
+</html>
